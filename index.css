@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    background-color: #FCFF77;
+    overflow-x: hidden;
+}
+body{
+    background: linear-gradient(359.7deg, #FCFF77 0.25%, #96FFA3 98.05%) no-repeat;
+    height: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: riftFont;
+    src: url(fonts/RiftSoft-Bold.otf) format('otf');
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    width:100%;
+}
+#padauk-frame{
+    width:100%;
+    position: absolute;
+    z-index:10;
+}
+#cmo{
+    display: block;
+    width:50%;
+    margin: 0 auto;
+}
+.couple-container{
+    width: 100%;
+    /*margin-top:225px;*/
+    position: relative;
+}
+#water-circle{
+    position: absolute;
+    width:95%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+#thingyan-couple{
+    width:36%;
+    display: block;
+    margin: 0 auto;
+}
+#thingyan{
+    display: block;
+    width:80%;
+    margin:0 auto;
+    animation: jumping 2s infinite;
+}
+#footer{
+    bottom:1.5%;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    font-size: 1.43rem;
+    color:#767474;
+    font-family: riftFont , sans-serif !important;
+    
+}
+@keyframes jumping{
+    10%{transform: scale(1.05) rotate(5deg);}
+    20%{transform: scale(1.05) rotate(-5deg);}
+    30%{transform: scale(1.05) rotate(5deg);}
+    40%{transform: none;}
+}
+@keyframes rotate {
+    0%{}
+    100%{
+        
+        object-position: center;
+    }
+}
+/* -------------------------------Pray Text---------------------------- */
+#pray-container{
+    /* position: relative; */
+}
+#overlay{
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* height:50%; */
+    width:100%;
+    touch-action: none;
+}
+#yellow-bg{
+    height: 50%;
+}
+#pray-text{
+    text-align: center;
+    color:white;
+    width:80%;
+    z-index: 9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#thingyan-couple-outline{
+    width:39%;
+    left:49%;
+    display: block;
+    margin: 0 auto;
+    z-index: 8;
+}
+#cross-icon{
+    right:0;
+    left:unset;
+    top:35%;
+    width:10%;
+    filter : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+#suprise-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+    width:40%;
+    top:65%;
+    background-color: transparent;
+    padding:15px 0;
+    color:white;
+    border-radius: 10px;
+    border:2px solid white;
+    text-align: center;
+    text-decoration: none;
+}
+#suprise-button{
+    text-align: center;
+    font-size: 1.2rem;
+    color:white;
+}
+.party-icons{
+    width:20%;
+    left:20%;
+}
+@media (max-height:700px) {
+    #thingyan,.couple-container{
+        margin-top: 15%;
+    }
+    #cmo{
+        margin-top: 10%;
+    }
+    #water-circle{
+        width:90%;
+    }
+    #footer{
+        font-size: 1.2rem;
+    }
+    #yellow-bg{
+        height: 60%;
+    }
+}

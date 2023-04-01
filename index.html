@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>CMO Thingyan</title>
 </head>
+
 <body>
     <div>
-        <img src="img/padaukframe.png" alt="padauk frame" id="padauk-frame"/>
+        <img src="img/padaukframe.png" alt="padauk frame" id="padauk-frame" />
     </div>
-<main>
-    
-    <div class="container">
-        <img src="img/cmo.png" alt="cmo" id="cmo"/>
-    </div>
-    <div class="couple-container">
-        <img src="img/thingyancouple.png" alt="thingyan-couple" id="thingyan-couple"/>
-        <img src="img/thingyancoupleoutline.svg" id="thingyan-couple-outline"/>
-        <img src="img/watercircle.png" alt="water-circle" id="water-circle"/>
-    </div>
-    <div>
-        <img src="img/thingyan.png" alt="thingyan banner" id="thingyan"/>
-    </div>
-</main>
-        <p id="footer">E-COM IT Department</p>
-        
-    
+    <main>
+
+        <div class="container">
+            <img src="img/cmo.png" alt="cmo" id="cmo" />
+        </div>
+        <div class="couple-container">
+            <img src="img/thingyancouple.png" alt="thingyan-couple" id="thingyan-couple" />
+            <img src="img/thingyancoupleoutline.svg" id="thingyan-couple-outline" />
+            <img src="img/watercircle.png" alt="water-circle" id="water-circle" />
+        </div>
+        <div>
+            <img src="img/thingyan.png" alt="thingyan banner" id="thingyan" />
+        </div>
+    </main>
+    <p id="footer">E-COM IT Department</p>
+
+
     <div id="pray-container" style="display:none;">
         <div id="overlay">
         </div>
         <!-- <img src="img/thingyancoupleoutline.svg" id="thingyan-couple-outline"/> -->
-        <img src="img/yellowbackground.png" id="yellow-bg"/>
-        <p id="pray-text" ></p>
-        <img src="icons/cross.svg" id="cross-icon"/>
-        <a id="suprise-container" href="https://www.facebook.com/fbcameraeffects/testit/236078848834107/MmMwZjUwZDdhYzVmYmFjMTA0ZGMxZjJhYjBlNzVkNjY=/">
-            <img src="icons/party.svg" class="party-icons"/>
-            <p id="suprise-button" >Suprise</p>
-            </a>
+        <img src="img/yellowbackground.png" id="yellow-bg" />
+        <p id="pray-text"></p>
+        <img src="icons/cross.svg" id="cross-icon" />
+        <a id="suprise-container"
+            href="https://www.facebook.com/fbcameraeffects/testit/236078848834107/MmMwZjUwZDdhYzVmYmFjMTA0ZGMxZjJhYjBlNzVkNjY=/">
+            <img src="icons/party.svg" class="party-icons" />
+            <p id="suprise-button">Suprise</p>
+        </a>
     </div>
+    <!-- <div id="wave-div">
+
+        <img src="img/wave1.png" class="wave-img"/>
+        <img src="img/wave1.png" class="wave-img"/>
+        <img src="img/wave1.png" class="wave-img"/>
+        <img src="img/wave1.png" class="wave-img"/>
+    </div> -->
+    <!-- ------------------------------------Waves -->
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+    <div class="header">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(97, 181, 255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255, 255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(97, 181, 255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(97, 181, 255)" />
+                </g>
+                
+            </svg>
+            
+            <!-- <div class="waves">
+                <div class="parallax">
+                    <img src="img/wave1.png" class="wave-img"/>
+                    <img src="img/wave1.png" class="wave-img"/>
+                    <img src="img/wave1.png" class="wave-img"/>
+                    <img src="img/wave1.png" class="wave-img"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Waves end-->
 </body>
 <script src="index.js" defer> </script>
+
 </html>

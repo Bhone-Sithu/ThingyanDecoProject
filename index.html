@@ -9,11 +9,18 @@
     <title>CMO Thingyan</title>
 </head>
 <body>
+    <!-- <audio controls autoplay="true" hidden="true"  type ="audio/mp3" id="thingyan-music">
+        <source src="img/Thingyan_Music(Cropped).mp3" type="audio/mpeg">
+        </audio>     -->
+        
+        
     <div>
         <img src="img/padaukframe.png" alt="padauk frame" id="padauk-frame"/>
     </div>
 <main>
     
+        <img src="icons/mute-svgrepo-com.svg" id="music-icon"/>
+   
     <div class="container">
         <img src="img/cmo.png" alt="cmo" id="cmo"/>
     </div>
@@ -31,6 +38,7 @@
     
     <div id="pray-container" style="display:none;">
         <div id="overlay">
+            <div id="snow" count="100"></div>
         </div>
         <!-- <img src="img/thingyancoupleoutline.svg" id="thingyan-couple-outline"/> -->
         <img src="img/yellowbackground.png" id="yellow-bg"/>
@@ -43,4 +51,5 @@
     </div>
 </body>
 <script src="index.js" defer> </script>
+<script src="pure-snow.js" defer> </script>
 </html>

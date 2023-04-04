@@ -2,6 +2,7 @@ $(
     () => {
         let musicPlay = false;
         let music = new Audio("img/Thingyan_Music(Cropped).mp3");
+        music.loop= true;
         // $("body").click(() => {
             
         //     music.play();
@@ -58,11 +59,15 @@ $(
             $("#pray-text").html(prayers[randoms]);
             $("#pray-container").fadeIn();
             $("#thingyan-couple-outline").fadeIn();
+            $("#snow").css("display","block");
         });
 
         $("#cross-icon").click(() => {
             $("#pray-container").fadeOut();
             $("#thingyan-couple-outline").fadeOut();
+            $("#snow").css("display","none");
+            // $("#pray-container").fadeOut();
+            // $("#thingyan-couple-outline").fadeOut();
         })
     }
 )

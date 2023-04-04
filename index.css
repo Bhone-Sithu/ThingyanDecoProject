@@ -7,6 +7,7 @@ html{
     background-color: #FCFF77;
     overflow-x: hidden;
 }
+
 body{
     background: linear-gradient(359.7deg, #FCFF77 0.25%, #96FFA3 98.05%) no-repeat;
     height: 100%;
@@ -32,6 +33,7 @@ main{
 #padauk-frame{
     width:100%;
     position: absolute;
+    pointer-events: none;
     z-index:10;
 }
 #cmo{
@@ -100,7 +102,7 @@ main{
     left:0;
     overflow: hidden;
 }
-#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container{
+#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container,#cross-container{
     position: absolute;
     top:50%;
     left:50%;
@@ -146,28 +148,30 @@ main{
     width:10%;
     filter : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 #suprise-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10%;
-    width:40%;
+    gap:5%;
+    width:70%;
     top:65%;
     background-color: transparent;
-    padding:15px 0;
+    padding:10px 5px;
     color:white;
     border-radius: 10px;
-    border:2px solid white;
+    border:1px solid white;
     text-align: center;
     text-decoration: none;
 }
-#suprise-button{
+#suprise-text{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color:white;
+    font-family: riftFont , sans-serif !important;
 }
 .party-icons{
-    width:20%;
+    width:10%;
     left:20%;
 }
 @media (max-height:700px) {

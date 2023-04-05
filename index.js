@@ -69,5 +69,6 @@ $(
             // $("#pray-container").fadeOut();
             // $("#thingyan-couple-outline").fadeOut();
         })
+
     }
 )

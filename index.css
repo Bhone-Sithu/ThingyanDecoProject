@@ -99,7 +99,7 @@ main{
     left:0;
     overflow: hidden;
 }
-#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container,#cross-container,marquee{
+#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container,#cross-container,#marquee{
     position: absolute;
     top:50%;
     left:50%;
@@ -136,9 +136,23 @@ background-color: #4aaeff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-marquee{
+#marquee{
+    white-space: nowrap;
     top:80%;
     color: white;
+    animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    100% {
+        -moz-transform: translateX(-325%);
+        -webkit-transform: translateX(-325%);
+        transform: translateX(-325%);
+    }
 }
 #thingyan-couple-outline{
     opacity: 0.5;

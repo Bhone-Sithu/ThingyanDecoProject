@@ -102,7 +102,7 @@ main{
     left:0;
     overflow: hidden;
 }
-#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container,#cross-container{
+#yellow-bg,#pray-text,#thingyan-couple-outline,#cross-icon,#suprise-container,#cross-container,marquee{
     position: absolute;
     top:50%;
     left:50%;
@@ -113,7 +113,7 @@ main{
 }
 #music-icon{
     position: absolute;
-    
+background-color: #4aaeff;
     right:5%;
     left:unset;
     top:10%;
@@ -121,9 +121,15 @@ main{
     /* filter : drop-shadow(0px 3px 3px rgba(0, 0, 0 , 0.2)); */
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%); */
-    border: 2px solid #4aaeff;
+    /* border: 2px solid ; */
     border-radius: 50%;
+    transition: 0.25s ease-in-out;
 }
+#music-icon:active{
+    -webkit-transform : translateY(10%);
+    transform: translateY(10%);
+}
+
 #yellow-bg{
     height: 50%;
 }
@@ -133,6 +139,10 @@ main{
     width:80%;
     z-index: 9;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+marquee{
+    top:80%;
+    color: white;
 }
 #thingyan-couple-outline{
     width:39%;

@@ -69,26 +69,47 @@ main{
 }
 #arrow{
     position: absolute;
-    /* top:20%;  */
-    bottom:18%;
+    bottom:15%;
     width:25%;
-    z-index:2;
+    z-index:0;
     right:0;
-    
 }
-#arrow .arrow-path{
-    stroke-dasharray: 1000;
-    stroke-dashoffset:1000;
-    animation: arrowAnimation 2s ease-in-out  forwards infinite;
-}
-@keyframes arrowAnimation {
+
+#arrow path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    stroke: #4aaeff;
+    stroke-width: 6;
+  }
+  
+  #arrow path:nth-child(1) {
+    animation: arrow 4s ease infinite;
+  }
+  #arrow path:nth-child(2) {
+    animation: arrow-head 4s infinite;
+    stroke-dashoffset: 500;
+    animation-delay: 1s;
+  }
+  @keyframes arrow-head {
     0%{
+        stroke-dashoffset: 500;
+    }
+    50%{
         stroke-dashoffset: 0;
     }
-    100%{
-        stroke-dashoffset: 1000;
+    78%{
+        stroke-dashoffset: 500;
     }
-}
+  }
+  @keyframes arrow {
+    from {
+      stroke-dashoffset: 500;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
 #footer{
     bottom:1.5%;
     position: absolute;
@@ -259,7 +280,7 @@ background-color: #4aaeff;
         top:30%;
     }
     #arrow{
-        bottom:15%;
+        bottom:8%;
     }
 }
 

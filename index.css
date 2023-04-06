@@ -64,6 +64,31 @@ main{
     margin:0 auto;
     animation: jumping 2s infinite;
 }
+#thingyan-container{
+    display: flex;
+}
+#arrow{
+    position: absolute;
+    /* top:20%;  */
+    bottom:18%;
+    width:25%;
+    z-index:2;
+    right:0;
+    
+}
+#arrow .arrow-path{
+    stroke-dasharray: 1000;
+    stroke-dashoffset:1000;
+    animation: arrowAnimation 2s ease-in-out  forwards infinite;
+}
+@keyframes arrowAnimation {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 1000;
+    }
+}
 #footer{
     bottom:1.5%;
     position: absolute;
@@ -232,6 +257,9 @@ background-color: #4aaeff;
     }
     #cross-icon{
         top:30%;
+    }
+    #arrow{
+        bottom:15%;
     }
 }
 
